@@ -2,11 +2,13 @@ package Larionov;
 
 import Larionov.entitites.Category;
 import Larionov.entitites.Customer;
+import Larionov.entitites.Order;
 import Larionov.entitites.Product;
 import com.github.javafaker.Faker;
 
 import java.util.Locale;
 import java.util.Random;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class Application {
@@ -34,5 +36,15 @@ public class Application {
             Customer.addCustomer(customerSupplier.get());
         }
         Customer.customers.forEach(System.out::println);
+
+
+
+
+        Order smartPhone = new Order(Customer.customers.get(0));
+
+        System.out.println(smartPhone);
+
+//    Order pannolone = new Order(Customer.customers(0));
+
     }
 }

@@ -19,6 +19,7 @@ public class Customer {
 		this.id = rndm.nextLong(1,1000000000);
 	}
 
+
 	public String getName() {
 		return name;
 	}
@@ -48,7 +49,7 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [name="+ name + "Surname=" + surname + ", tier=" + tier + ", id=" + id +"]";
+		return "Customer [name=" + name + " ,Surname=" + surname + ", tier=" + tier + ", id=" + id +"]";
 	}
 
 }
